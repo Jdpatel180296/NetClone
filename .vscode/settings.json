@@ -1,0 +1,24 @@
+{
+    // Enable format on save for the workspace
+    "editor.formatOnSave": true,
+    // Prefer Prettier for common languages if installed
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // Prisma file association and recommended formatter (if prisma extension installed)
+    "files.associations": {
+        "*.prisma": "prisma"
+    },
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+    // Optional: trim trailing whitespace and ensure final newline on save
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+}
